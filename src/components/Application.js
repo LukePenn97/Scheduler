@@ -49,7 +49,7 @@ const list = dailyAppointments.map((appointment) => {
         <nav className="sidebar__menu">
           <DayList
             days={state.days}
-            day={state.day}
+            day={state.day.name}
             setDay={setDay}
           />
         </nav>

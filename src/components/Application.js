@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-
 import "components/Application.scss";
 
 import Appointment from "components/Appointment";
@@ -29,13 +28,13 @@ const list = dailyAppointments.map((appointment) => {
   const dailyInterviewers = getInterviewersForDay(state, state.day.name);
   return (<Appointment 
     key={appointment.id} 
-    id={appointment.id} 
+    id={appointment.id}
     time={appointment.time}
     interview={interview}
     interviewers={dailyInterviewers}
     bookInterview={bookInterview}
     cancelInterview={cancelInterview}
-      />);
+    />);
 })
 
   return (
